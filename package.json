@@ -1,0 +1,19 @@
+{
+  "name": "fast-napi-rs",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start:nf": "node src/nf.mjs",
+    "start:rs": "node src/rs.mjs",
+    "benchmark": "autocannon --method POST --body '{\"a\": 1, \"b\":2, \"c\":3}' -H 'Content-Type:application/json' http://localhost:3000/"
+  },
+  "keywords": [],
+  "author": "Matteo Pietro Dazzi",
+  "license": "MIT",
+  "dependencies": {
+    "@node-rs/jsonwebtoken": "^0.2.0",
+    "autocannon": "^7.11.0",
+    "fast-jwt": "github:nearform/fast-jwt",
+    "fastify": "^4.17.0"
+  }
+}
